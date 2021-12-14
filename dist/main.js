@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/logger.js":
@@ -7,14 +8,14 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var logMessage = function logMessage(msg) {
-  return console.log(msg);
-};
+var logMessage = function logMessage(message) {
+  console.log(message);
+}; // const logMessage = msg => console.log(msg)
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (logMessage);
 
@@ -26,7 +27,6 @@ var logMessage = function logMessage(msg) {
   \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -40,7 +40,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, p{\n    font-family: helvetica;\n    color: #3e3e3e;\n}\n\n.description{\n    font-size: 14px;\n    color: #9e9e9e;\n}\n\n.awful-selfie{\n    background-color: grey;\n    width: 300px;\n    height: 300px;\n    background-size: 100% auto;\n}", "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,sBAAsB;IACtB,YAAY;IACZ,aAAa;IACb,0BAA0B;AAC9B","sourcesContent":["h1, h2, h3, h4, h5, p{\n    font-family: helvetica;\n    color: #3e3e3e;\n}\n\n.description{\n    font-size: 14px;\n    color: #9e9e9e;\n}\n\n.awful-selfie{\n    background-color: grey;\n    width: 300px;\n    height: 300px;\n    background-size: 100% auto;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, p{\n    font-family: helvetica;\n    color: #3e3e3e;\n}\n\n.description{\n    font-size: 14px;\n    color: #9e9e9e;\n}\n\n.awful-selfie{\n    background-color: orange;\n    width: 300px;\n    height: 300px;\n    background-size: 100% auto;\n}", "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,aAAa;IACb,0BAA0B;AAC9B","sourcesContent":["h1, h2, h3, h4, h5, p{\n    font-family: helvetica;\n    color: #3e3e3e;\n}\n\n.description{\n    font-size: 14px;\n    color: #9e9e9e;\n}\n\n.awful-selfie{\n    background-color: orange;\n    width: 300px;\n    height: 300px;\n    background-size: 100% auto;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -53,7 +53,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "h1, h2, h3, h4, h5, p{\n    font-famil
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -165,7 +164,6 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -197,7 +195,6 @@ module.exports = function (item) {
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -252,7 +249,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -366,7 +362,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -415,7 +410,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -436,7 +430,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -458,7 +451,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -538,7 +530,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -632,11 +623,15 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-var longMessage = __webpack_require__(/*! ./js/logger */ "./src/js/logger.js");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/logger */ "./src/js/logger.js");
+//const logMessage = require('./js/logger')
+
 
 __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
 
-longMessage('welcome to Expack');
+(0,_js_logger__WEBPACK_IMPORTED_MODULE_0__["default"])('long message is working');
+alert("Webpack is running......");
 })();
 
 /******/ })()
